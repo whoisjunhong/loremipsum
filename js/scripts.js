@@ -27,11 +27,19 @@ $(document).ready(function() {
         $('#container').append(select);
     })
 
-    $('#randBirthdate').click(function() {
-        const start = 0
-        const end = Date.now()
-        var randDate = Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
-        
-        $('birthdayDate').val(randDate)
+    $('#startDay').click(function() {
+        var curr = Math.floor(Math.random() * (32 - 1) + 1)
+        $('#birthDay').attr('value', curr )
+    })
+
+    $('#startMonth').click(function() {
+        const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+        var curr = months[Math.floor(Math.random()*months.length)] 
+        $('#birthMonth').attr('value', curr);
+    })
+
+    $('#startYear').click(function(e) {
+        var curr = Math.floor(Math.random() * (2022 - 1942) + 1942)
+        $('#birthYear').attr('value', curr )
     })
 });
