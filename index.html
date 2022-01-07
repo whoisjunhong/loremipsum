@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/catJAM.gif" type="image/gif" />
     <title>Registration form</title>
     <link
       rel="stylesheet"
@@ -117,7 +118,7 @@
                 </div>
               </div>
 
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-12">
                       <select class="select form-control-lg">
                         <option value="1" disabled>Choose option</option>
@@ -129,19 +130,66 @@
                         >Choose option</label
                       >
                     </div>
-                  </div>
+                  </div> -->
 
+                  <div class="row">
                   <div class="mt-4 pt-2">
-                    <input
-                      class="btn btn-primary btn-lg"
-                      type="submit"
-                      value="Submit"
-                    />
+                    <div class="sb">
+                      <div id="submit-btn">
+                        <input
+                          class="btn btn-primary btn-lg"
+                          type="submit"
+                          value="Submit"
+                          style="cursor: default"
+                          onclick="alert('This is not the right submit button! 1/5')"
+                        />
+                      </div>
+                      <div id="submit-btn2">
+                        <input
+                          class="btn btn-primary btn-lg"
+                          type="submit"
+                          value="Submit"
+                          style="cursor: default"
+                          onclick="alert('Nah man, try again! 2/5')"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
+
+              <div id="submit-btn3">
+                <input
+                  class="btn btn-primary btn-lg"
+                  type="submit"
+                  value="Submit"
+                  style="cursor: default"
+                  onclick="alert('Nah man, try again! 3/5')"
+                />
               </div>
             </div>
       </div>
+
+      <div id="submit-btn4">
+        <input
+          class="btn btn-primary btn-lg"
+          type="submit"
+          value="Submit"
+          style="cursor: default"
+          onclick="window.open('http://www.donothingfor2minutes.com/');
+        alert('Glad you had a short wait! 4/5')"
+          formtarget="_blank"
+        />
+      </div>
     </section>
+
+    <div id="submit-btn5">
+      <input
+        class="btn btn-primary btn-lg"
+        type="submit"
+        value="Submit"
+        style="cursor: default"
+        onclick="window.location.href='./submission.html'"
+      />
+    </div>
   </body>
 </html>
