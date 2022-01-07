@@ -89,65 +89,110 @@
                     </div>
                   </div>
                 </div>
-                  <div class="row">
-                    <div class="col-md-6 mb-4 pb-2">
-                      <div class="form-outline">
-                        <input
-                          type="email"
-                          id="emailAddress"
-                          class="form-control form-control-lg"
-                        />
-                        <label class="form-label" for="emailAddress"
-                          >Email</label
-                        >
-                      </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+                    <div class="form-outline">
+                      <input
+                        type="email"
+                        id="emailAddress"
+                        class="form-control form-control-lg"
+                      />
+                      <label class="form-label" for="emailAddress">Email</label>
                     </div>
-                   <div class="col-md-6 mb-4 pb-2">
-                  <div class="form-outline">
-                    <input
-                      type="tel"
-                      id="phoneNumber"
-                      class="form-control form-control-lg"
-                    />
-                    <label class="form-label" for="phoneNumber"
-                      >Phone Number
-                    </label>
-                    <p></p>
-                    <a
-                      href="./js/javascript-tetris/index.html"
-                      target="”_blank”"
-                      >Play a free game while youre at it! You deserve a
-                      break!</a
-                    >
                   </div>
-                </div>
-              </div>
-
-                  <div class="row">
-                    <div class="col-12">
-                      <select class="select form-control-lg">
-                        <option value="1" disabled>Choose option</option>
-                        <option value="2">Subject 1</option>
-                        <option value="3">Subject 2</option>
-                        <option value="4">Subject 3</option>
-                      </select>
-                      <label class="form-label select-label"
-                        >Choose option</label
+                  <div class="col-md-6 mb-4 pb-2">
+                    <div class="form-outline">
+                      <input
+                        type="tel"
+                        id="phoneNumber"
+                        class="form-control form-control-lg"
+                      />
+                      <label class="form-label" for="phoneNumber"
+                        >Phone Number
+                      </label>
+                      <p></p>
+                      <a
+                        href="./js/javascript-tetris/index.html"
+                        target="”_blank”"
+                        >Play a free game while youre at it! You deserve a
+                        break!</a
                       >
                     </div>
                   </div>
+                </div>
 
+                <div class="row">
+                  <div class="col-12">
+                    <select class="select form-control-lg">
+                      <option value="1" disabled>Choose option</option>
+                      <option value="2">Subject 1</option>
+                      <option value="3">Subject 2</option>
+                      <option value="4">Subject 3</option>
+                    </select>
+                    <label class="form-label select-label">Choose option</label>
+                  </div>
+                </div>
+                <div class="row">
                   <div class="mt-4 pt-2">
-                    <input
-                      class="btn btn-primary btn-lg"
-                      type="submit"
-                      value="Submit"
-                    />
+                    <div class="sb">
+                      <div id="submit-btn">
+                        <input
+                          class="btn btn-primary btn-lg"
+                          type="submit"
+                          value="Submit"
+                          style="cursor: default"
+                          onclick="alert('This is not the right submit button! 1/5')"
+                        />
+                      </div>
+                      <div id="submit-btn2">
+                        <input
+                          class="btn btn-primary btn-lg"
+                          type="submit"
+                          value="Submit"
+                          style="cursor: default"
+                          onclick="alert('Nah man, try again! 2/5')"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div id="submit-btn3">
+                <input
+                  class="btn btn-primary btn-lg"
+                  type="submit"
+                  value="Submit"
+                  style="cursor: default"
+                  onclick="alert('Nah man, try again! 3/5')"
+                />
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="submit-btn4">
+        <input
+          class="btn btn-primary btn-lg"
+          type="submit"
+          value="Submit"
+          style="cursor: default"
+          onclick="window.open('http://www.donothingfor2minutes.com/');
+        alert('Glad you had a short wait! 3/5')"
+          formtarget="_blank"
+        />
       </div>
     </section>
+
+    <div id="submit-btn5">
+      <input
+        class="btn btn-primary btn-lg"
+        type="submit"
+        value="Submit"
+        style="cursor: default"
+        onclick="window.location.href='./submission.html'"
+      />
+    </div>
   </body>
 </html>
