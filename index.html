@@ -38,33 +38,32 @@
           <div class="col-12 col-lg-9 col-xl-7">
             <div
               class="card shadow-2-strong card-registration"
-              style="border-radius: 15px"
-            >
+              style="border-radius: 15px">
               <div class="card-body p-4 p-md-5">
                 <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
                 <div class="row">
+                  <div class="col-md-12 mb-12">
                   <label
                     class="form-label"
                     for="fullName"
                     style="margin-right: 5px"
-                    >Full Name: &nbsp;</label
-                  >
+                    >Full Name: &nbsp;</label>
                   <div id="container">
                     <button id="generate">+</button>
                   </div>
+                  </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin-top: 20px;">
                   <div class="col-md-6 mb-4 d-flex align-items-center">
                     <div class="form-outline datepicker w-100">
-                      <input
-                        type="text"
-                        class="form-control form-control-lg"
-                        id="birthdayDate"
-                      />
-                      <label for="birthdayDate" class="form-label"
-                        >Birthday</label
-                      >
+                        <p>Enter your birthdate: &nbsp;</p>
+                        <input type="text" id="birthDay" name="birthDay" placeholder="Day" size="3" readonly>
+                        <button id="startDay" style="margin-bottom: 10px;">Go</button><br>
+                        <input type="text" id="birthMonth" name="birthMonth" size="10"placeholder="Month" readonly>
+                        <button id="startMonth" style="margin-bottom: 10px;">Go</button><br>
+                        <input type="text" id="birthYear" name="birthYear" size="4" placeholder="Year" readonly>
+                        <button id="startYear">Go</button><br>
                     </div>
                   </div>
 
