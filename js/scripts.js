@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#generate').click(function() {
-        var values = [" ", "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+        var values = [" ","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
         function shuffle(a) {
             var j, x, i;
@@ -38,8 +38,14 @@ $(document).ready(function() {
         $('#birthMonth').attr('value', curr);
     })
 
-    $('#startYear').click(function(e) {
+    $('#startYear').click(function() {
         var curr = Math.floor(Math.random() * (2022 - 1942) + 1942)
         $('#birthYear').attr('value', curr )
+    })
+
+    $('#convert').click(function() {
+        let toConvert = String.fromCharCode(document.getElementById("asciiEmail").value)
+        // alert(toConvert)
+        $('#emailResult').append(toConvert)
     })
 });
