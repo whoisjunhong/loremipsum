@@ -1,0 +1,113 @@
+.progress {
+  position: absolute;
+  width: 210px;
+  height: 30px;
+  background: #d380a4;
+  border-radius: 5px;
+  overflow: hidden;
+  top: 50%;
+  left: 43%;
+}
+
+.progress__fill {
+  width: 0%;
+  height: 100%;
+  background: #ae0aa8;
+  transition: all 0.2s;
+}
+
+.progress__text {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font: bold 14px "Quicksand", sans-serif;
+  color: #ffffff;
+}
+
+#appreciate {
+  position: absolute;
+  display: flex;
+  left: 19vw;
+  top: 40vh;
+}
+
+#cat12 {
+  background: black;
+  display: inline;
+  height: 1000px;
+  width: 1000px;
+  z-index: 2;
+}
+
+#cats {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 0px;
+  display: block;
+}
+
+#cats2 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 0px;
+  right: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: block;
+}
+#cats3 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 0px;
+  display: block;
+}
+#cats4 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: block;
+}
+
+#cats11 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 0px;
+  display: none;
+}
+
+#cats22 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 0px;
+  right: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: none;
+}
+#cats33 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 0px;
+  display: none;
+}
+#cats44 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: none;
+}

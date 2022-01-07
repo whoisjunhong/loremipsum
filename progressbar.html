@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submitting...</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/pg.css" />
+    <script src="js/pg.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function onload() {
+        const myProgressBar = document.querySelector(".progress");
+        for (let i = 0; i < 10; i++) {
+          setTimeout(() => {
+            updateProgressBar(myProgressBar, i);
+          }, i * 500);
+        }
+        for (let i = 50; i < 75; i++) {
+          setTimeout(() => {
+            updateProgressBar(myProgressBar, i);
+          }, i * 700);
+        }
+        for (let i = 75; i < 90; i++) {
+          setTimeout(() => {
+            updateProgressBar(myProgressBar, i);
+          }, i * 1000);
+        }
+        for (let i = 90; i < 100; i++) {
+          setTimeout(() => {
+            updateProgressBar(myProgressBar, i);
+          }, i * 1500);
+        }
+        setTimeout(() => {
+          document.getElementById("cats").style.display = "none";
+          document.getElementById("cats2").style.display = "none";
+          document.getElementById("cats3").style.display = "none";
+          document.getElementById("cats4").style.display = "none";
+          document.getElementById("cats11").style.display = "block";
+          document.getElementById("cats22").style.display = "block";
+          document.getElementById("cats33").style.display = "block";
+          document.getElementById("cats44").style.display = "block";
+          document.getElementById("overlay").style.opacity = 0.7;
+          document.getElementById("overlay").style.cursor = "wait";
+        }, 120000);
+        setTimeout(() => {
+          document.getElementById("hang").style.display = "block";
+        }, 123000);
+      }
+    </script>
+  </head>
+
+  <body onload="onload()">
+    <div style="background: white; opacity: 1; cursor: default" id="overlay">
+      <div style="height: 100vh; width: 100vw"></div>
+      <div id="bg">
+        <div>
+          <h2 id="appreciate">
+            Thank you for your response, please wait as we collect your response
+          </h2>
+        </div>
+        <div class="progress">
+          <div class="progress__fill"></div>
+          <span class="progress__text">0%</span>
+        </div>
+      </div>
+      <div class="cat12">
+        <img src="./img/catJAM.gif" class="cat" id="cats" />
+        <img src="./img/catJAM.gif" class="cat" id="cats2" />
+        <img src="./img/catJAM.gif" class="cat" id="cats3" />
+        <img src="./img/catJAM.gif" class="cat" id="cats4" />
+        <img src="./img/catjam_static.jpg" class="cat1" id="cats11" />
+        <img src="./img/catjam_static.jpg" class="cat1" id="cats22" />
+        <img src="./img/catjam_static.jpg" class="cat1" id="cats33" />
+        <img src="./img/catjam_static.jpg" class="cat1" id="cats44" />
+      </div>
+      <div></div>
+    </div>
+    <img
+      src="./img/2022-01-06 01_54_50-Window.png"
+      style="
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        justify-content: center;
+        top: 200px;
+        left: 35%;
+        width: 30%;
+        display: none;
+      "
+      id="hang"
+      onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"
+    />
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Registration form</title>
+    <title>Captcha</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -38,14 +38,18 @@
       document.getElementById("head").innerHTML = click2();
     }
     function temp() {
-      document.getElementById("words").innerHTML = click();
+      var temp = click();
+      if (temp === null) {
+        window.open("./progressbar.html", "_self");
+      }
+      document.getElementById("words").innerHTML = temp;
       document.getElementById("head").innerHTML = click2();
       setTimeout(() => {
         document.getElementById("tick").checked = false;
       }, 1000);
     }
   </script>
-  <body onload="onload();">
+  <body onload="onload();" style="background-color: rgba(0, 0, 0, 0.13)">
     <div id="caughtya">
       <span
         style="
