@@ -1,4 +1,4 @@
-# loremipsum
+# Lorem Ipsum
 
 The advancement of digital design has greatly helped improve web development. With well placed input fields and easily identifiable buttons, users can quickly and intuitively access webpages. However, what if webpages were not intuitive at all? 
 
