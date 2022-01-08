@@ -13,4 +13,5 @@ https://whoisjunhong.github.io/loremipsum/
 
 ## Libraries
 Bootstrap for the Registration form design
+
 Tetris game by Jake Gordon (https://codeincomplete.com/articles/javascript-tetris/)
