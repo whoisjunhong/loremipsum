@@ -48,4 +48,10 @@ $(document).ready(function() {
         // alert(toConvert)
         $('#emailResult').append(toConvert)
     })
+
+    $('#playGame').click(function() {
+        var popup = window.open("./js/javascript-tetris/index.html","mypopup","width=1000,height=1080");
+        popup.focus();
+        // popup.document.getElementById("player").someFunction();
+    })
 });

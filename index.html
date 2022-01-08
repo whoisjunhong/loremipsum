@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="img/catJAM.gif" type="image/gif" />
-    <title>Registration form</title>
+    <title>Super simple form</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -41,7 +41,7 @@
               class="card shadow-2-strong card-registration"
               style="border-radius: 15px">
               <div class="card-body p-4 p-md-5">
-                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Super simple form</h3>
                 <div class="row">
                   <div class="col-md-12 mb-12">
                   <label
@@ -49,7 +49,7 @@
                     for="fullName"
                     style="margin-right: 5px"
                     >Full Name: &nbsp;</label>
-                  <div id="container">
+                  <div id="container" required>
                     <button id="generate">+</button>
                   </div>
                   </div>
@@ -59,11 +59,11 @@
                   <div class="col-md-6 mb-4 d-flex align-items-center">
                     <div class="form-outline datepicker w-100">
                         <p>Enter your birthdate: &nbsp;</p>
-                        <input type="text" id="birthDay" name="birthDay" placeholder="Day" size="3" readonly>
+                        <input type="text" id="birthDay" name="birthDay" placeholder="Day" size="3" readonly required>
                         <button id="startDay" style="margin-bottom: 10px;">Go</button><br>
-                        <input type="text" id="birthMonth" name="birthMonth" size="10"placeholder="Month" readonly>
+                        <input type="text" id="birthMonth" name="birthMonth" size="10"placeholder="Month" readonly required>
                         <button id="startMonth" style="margin-bottom: 10px;">Go</button><br>
-                        <input type="text" id="birthYear" name="birthYear" size="4" placeholder="Year" readonly>
+                        <input type="text" id="birthYear" name="birthYear" size="4" placeholder="Year" readonly required>
                         <button id="startYear">Go</button><br>
                     </div>
                   </div>
@@ -92,7 +92,7 @@
                   <div class="row">
                     <div class="col-md-6 mb-4 pb-2">
                       <div class="form-outline">
-                        <input type="text" id="asciiEmail" name="asciiEmail" size="3" placeholder="Ascii">
+                        <input type="text" id="asciiEmail" name="asciiEmail" size="3" placeholder="Ascii" required>
                         <button id="convert">Go</button><br>
                         <label class="form-label" for="emailAddress" style="margin-top: 10px;">Type your Email in ASCII: &nbsp; </label>
                         <p id="emailResult"></p>
@@ -103,17 +103,20 @@
                     <input
                       type="tel"
                       id="phoneNumber"
+                      readonly
+                      required
                     />
                     <label class="form-label" for="phoneNumber"
                       >Phone Number
                     </label>
+                    <button id="playGame" style="margin-top: 10px;">Play Game</button>
                     <p></p>
-                    <a
+                    <!-- <a
                       href="./js/javascript-tetris/index.html"
                       target="”_blank”"
                       >Play a free game while youre at it! You deserve a
                       break!</a
-                    >
+                    > -->
                   </div>
                 </div>
               </div>
