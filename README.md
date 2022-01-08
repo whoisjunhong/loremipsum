@@ -7,3 +7,6 @@ Our team presents to you Lorem Ipsum, a registration form that challenges signup
 
 ## Usage 
 Try out the input fields of the registration page and attempt to submit the form! Its suggested to run the website on Google Chrome for the best experience!
+
+## Try here!
+https://whoisjunhong.github.io/loremipsum/
